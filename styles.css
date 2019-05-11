@@ -1,0 +1,213 @@
+@charset "utf8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#header{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background-color: #FFFFFF;;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 4;
+}
+
+#header-img{
+	width: 100%;
+	height: auto;
+	min-width: 100px;
+}
+
+#nav-bar ul li{
+	border: 1px solid rgba(98,184,183,0.80);
+	background-color: #FFCECF;
+	border-radius: 20px;
+}
+
+#advantagesofPlanting{
+	margin: 10px 0;
+	text-align: center;
+}
+
+video,img{
+	width: 100%;
+	height: auto;
+	min-width: 100px;
+}
+
+a{
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+}
+
+a:link{
+	color: #0D23A3;
+}
+
+a:hover{
+	color: brown;
+}
+
+ul{
+	list-style-type: none;
+}
+
+form{
+	text-align: center;
+	margin-top: 5px;
+}
+	
+#email{
+	width: 300px;
+	height: 30px;
+	border: 1px solid rgba(98,184,183,0.80);
+	background-color: #FFFFFF;
+	border-radius: 20px;
+	color: #0D23A3;
+	font-style: italic;
+	font-weight: bold;
+}
+	
+#submit,button{
+	margin-top: 5px;
+	width: 100px;
+	height: 30px;
+	border: 1px solid rgba(98,184,183,0.80);
+	background-color: #FFFFFF;
+	border-radius: 20px;
+	color: #0D23A3;
+	font-style: italic;
+	font-weight: bold;
+}
+
+main{
+	background-image: url("images/y56vphpb-1413249886.jpg");
+	color: #FFFFFF;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+footer{
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+footer nav ul li{
+	display: inline;
+}
+
+h2,button,h3,#pricing li p{
+	text-align: center;
+}
+
+#pricing{
+	width: 80%;
+	margin: auto;
+	height: auto;
+}
+
+#pricing li{
+	background-color: #FFFFFF;
+	color: #0D23A3;
+	border: 2px outset #FFFFFF;
+	margin-top: 10px;
+}
+
+#pricing li h3,
+#pricing li img,
+#pricing li h2,
+#pricing li p{
+	margin: 5px 0;
+}
+
+#pricing li button{
+	display: block;
+	margin: 5px auto;
+}
+
+@media only screen and (max-width:450px){
+	#header-img{
+		height: 80px;
+	}
+}
+
+@media only screen and (min-width: 451px) and (max-width:768px){
+	#header-img{
+		height: 130px;
+	}
+	
+	main h2{
+		font-size: 30px;
+	}
+	
+	#advantagesofPlanting{
+		font-size: 20px;
+	}
+	
+	#pricing li img{
+		height: 250px;
+	}
+	
+	#pricing li{
+		margin-left: 10px;
+	}
+	
+	#pricing{
+		display: grid;
+		grid-template-columns: repeat(2,50%);
+		grid-template-rows: repeat(3,auto);
+	}
+}
+
+@media only screen and (min-width:769px){
+	#header-img{
+		height: 100px;
+	}
+	
+	#nav-bar{
+		background-color: #FFCECF;
+	}
+	
+	#nav-bar ul li{
+		display: inline;
+		margin-left: 100px;
+		border: none;
+	}
+	
+	.flexContainer1{
+		display: flex;
+	}
+	
+	.flexContainer2{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#howtoplant{
+		width: 80%;
+		margin: auto;
+	}
+	
+	#pricing{
+		display: grid;
+		grid-template-columns: repeat(3,35%);
+		grid-template-rows: repeat(2,auto);
+	}
+	
+	#pricing li{
+		margin-left: 10px;
+	}
+	
+	#pricing li img{
+		height: 230px;
+	}
+	
+}
